@@ -1,8 +1,13 @@
 .hero {
 
     &__contanier {
-        max-width: 1200px;
+        max-width: 970px;
         margin: 0 auto;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__txt-block {
@@ -10,6 +15,7 @@
         max-width: 450px;
 
         & h1 {
+            margin-bottom: 30px;
             font-style: normal;
             font-weight: 700;
             font-size: 50px;
@@ -18,11 +24,49 @@
         }
 
         & p {
+            margin-bottom: 20px;
             font-style: normal;
             font-weight: 500;
             font-size: 24px;
             line-height: 150%;
             color: $ligth;
+        }
+
+        & a {
+            margin-top: 30px;
+            padding: 16px 25px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            color: $white;
+            background-color: $dark;
+            border-radius: 10px;
+
+            &::before {
+                content: url('../images/google_play.svg');
+                margin-right: 16px;
+                vertical-align: top;
+            }
+        }
+    }
+
+    &__img-block {
+        position: relative;
+        // background: url('../images/hero_down.png') no-repeat;
+
+        & img {
+            
+            &:first-child {
+                position: absolute;
+                top: 8%;
+                right: -15%;
+                z-index: 1;
+            }
+
+            &:last-child {
+            
+            }
         }
     }
 }
