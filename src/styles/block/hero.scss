@@ -7,9 +7,22 @@
 
     &__txt-block {
 
+        max-width: 450px;
+
         & h1 {
-            font-size: 5rem;
-            line-height: 100%;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 150%;
+            color: $dark;
+        }
+
+        & p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+            color: $ligth;
         }
     }
 }
