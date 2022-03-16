@@ -4,7 +4,8 @@ const scss = require('./gulp/scss');
 const scripts = require('./gulp/scripts');
 const clean = require('./gulp/clean')
 const img = require('./gulp/img');
-const server = require('./gulp/server')
+const server = require('./gulp/server');
+const font = require('./gulp/font');
 
 const watch = () => {
   gulp.watch('src/pug/**/*.pug', pug)
@@ -19,6 +20,6 @@ const watch = () => {
 const { series, parallel } = gulp
 exports.dev = series(
     clean,
-    parallel(pug, scss, scripts, img),
+    parallel(pug, scss, scripts, img, font),
     parallel(watch, server)
 )
