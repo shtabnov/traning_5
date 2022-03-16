@@ -1,0 +1,15 @@
+.hero {
+
+    &__contanier {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__txt-block {
+
+        & h1 {
+            font-size: 5rem;
+            line-height: 100%;
+        }
+    }
+}
