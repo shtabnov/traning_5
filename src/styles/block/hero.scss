@@ -8,6 +8,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 150px;
     }
 
     &__txt-block {
@@ -15,7 +16,8 @@
         max-width: 450px;
 
         & h1 {
-            margin-bottom: 30px;
+            margin-top: 81px;
+            margin-bottom: 32px;
             font-style: normal;
             font-weight: 700;
             font-size: 50px;
@@ -30,11 +32,14 @@
             font-size: 24px;
             line-height: 150%;
             color: $ligth;
+
+            &:last-child {
+                margin-bottom: 65px;
+            }
         }
 
         & a {
-            margin-top: 30px;
-            padding: 16px 25px;
+            padding: 18px 24px;
             font-style: normal;
             font-weight: 700;
             font-size: 20px;
@@ -53,19 +58,14 @@
 
     &__img-block {
         position: relative;
-        // background: url('../images/hero_down.png') no-repeat;
 
         & img {
             
             &:first-child {
                 position: absolute;
-                top: 8%;
+                top: 9%;
                 right: -15%;
                 z-index: 1;
-            }
-
-            &:last-child {
-            
             }
         }
     }
