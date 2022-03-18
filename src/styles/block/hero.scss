@@ -76,13 +76,10 @@
 
 @media screen and (max-width: 900px) {
     // смена wrapper на column
+    // ссылка на плеймарткет = flex
+    //margin txt-block
     .hero {
-
-        &__contanier {
-            max-width: 970px;
-            margin: 0 auto;
-        }
-    
+  
         &__wrapper {
             display: flex;
             flex-direction: column;
@@ -94,31 +91,75 @@
             max-width: 450px;
             margin-bottom: 100px;
     
-            & h1 {
-                margin-top: 81px;
-                margin-bottom: 32px;
+            & a {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 18px 0px 10px;
                 font-style: normal;
                 font-weight: 700;
-                font-size: 50px;
+                font-size: 20px;
+                line-height: 150%;
+                color: $white;
+                background-color: $dark;
+                border-radius: 10px;
+    
+                &::before {
+                    content: url('../images/google_play.svg');
+                    margin-right: 16px;
+                }
+            }
+        }
+    }      
+}
+
+@media screen and (max-width: 560px) {
+    .hero {
+
+        &__contanier {
+            margin: 0 auto;
+            margin: 0 20px;
+        }
+    
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 70px;
+        }
+
+        &__description {
+            display: flex;
+        }
+    
+        &__txt-block {
+            margin-bottom: 64px;
+
+            & h1 {
+                margin-top: 0;
+                margin-bottom: 20px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
                 line-height: 150%;
                 color: $dark;
             }
     
             & p {
                 margin-bottom: 20px;
+                margin-right: 20px;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 24px;
+                font-size: 16px;
                 line-height: 150%;
                 color: $ligth;
     
                 &:last-child {
-                    margin-bottom: 65px;
+                    margin-bottom: 40px;
                 }
             }
     
             & a {
-                padding: 18px 24px;
+                padding: 16px 0px 10px;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 20px;
@@ -136,20 +177,18 @@
         }
     
         &__img-block {
-            max-width: fit-content;
             position: relative;
     
             & img {
-                width: 100%;
                 
                 &:first-child {
-                    width: 130%;
+                    width: 110%;
                     position: absolute;
                     top: 9%;
-                    right: -15%;
+                    right: -5%;
                     z-index: 1;
                 }
             }
         }
-    }      
+    }
 }

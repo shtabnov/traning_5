@@ -18,8 +18,10 @@ const watch = () => {
 // module.exports.start = gulp.series(pug2html, style, move, babel);
 // module.exports.img = gulp.series(image);
 const { series, parallel } = gulp
-exports.dev = series(
+exports.start = series(
     clean,
     parallel(pug, scss, scripts, img, font),
     parallel(watch, server)
 )
+
+
