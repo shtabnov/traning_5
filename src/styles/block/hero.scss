@@ -70,6 +70,10 @@
                 right: -15%;
                 z-index: 1;
             }
+
+            &:last-child {
+                display: none;
+            }
         }
     }
 }
@@ -178,17 +182,22 @@
     
         &__img-block {
             position: relative;
-    
+
             & img {
-                
-                &:first-child {
-                    width: 110%;
-                    position: absolute;
-                    top: 9%;
-                    right: -5%;
-                    z-index: 1;
+
+                &:nth-child(1) {
+                    display: none;
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+    
+                &:last-child {
+                    display: block;
                 }
             }
+                
         }
     }
 }
