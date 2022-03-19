@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<header class="header"> 
+			<div class="header__contanier"> 
+				<div class="header__wrapper"><a class="header__logo"><img src="images/logo.svg" alt="logo"></a>
+					<nav class="header__nav"> 
+						<ul class="header__list"> 
+							<li class="header__item"> <a class="header__link" href="#">Переваги</a></li>
+							<li class="header__item"> <a class="header__link" href="#">Відгуки</a></li>
+						</ul>
+					</nav><a class="header__tel-btn" href="tel:12345678">Завантажити</a>
+				</div>
+			</div>
+		</header>
+		<section class="hero"> 
+			<div class="hero__contanier"> 
+				<div class="hero__wrapper">
+					<div class="hero__txt-block">
+						<h1 class="hero__heading">Миттєвий кредит у твоєму смартфоні</h1>
+						<div class="hero__description">
+							<p>До 15 000 грн </p>
+							<p>До 30 днів</p>
+						</div><a class="hero__link" href="http://play.google.com">Завантажити додаток</a>
+					</div>
+					<div class="hero__img-block"> <img src="images/hero_up.png" alt="phones"><img src="images/hero_down.png" alt="background"><img src="images/hero_mobile.png" alt="phones_on_the_background"></div>
+				</div>
+			</div>
+		</section>
+		<section class="features"> 
+			<div class="features__contanier"> 
+				<div class="features__wrapper"> 
+					<h2 class="features__heading">Переваги</h2>
+					<div class="features__list"> 
+						<div class="features__card card">
+							<div class="card__icon" style="background: url(../images/features_1.svg) no-repeat 50%, radial-gradient(100% 100% at 100% 100%, #FF8900 0%, #FFAD4F 100%);"></div>
+							<div class="card__text"> 
+								<h3 class="card__heading">5-7 хвилин</h3>
+								<p class="card__description">Схвалимо вашу заявку протягом 5-7 хвилин без дзвінків</p>
+							</div>
+						</div>
+						<div class="features__card card">
+							<div class="card__icon" style="background: url(../images/features_2.svg) no-repeat 50%, radial-gradient(100% 100% at 100% 100%, #3894EF 0%, #8AC5FF 100%);"></div>
+							<div class="card__text"> 
+								<h3 class="card__heading">15 000 грн</h3>
+								<p class="card__description">Видаємо гроші до 15 000 гривень онлайн 24/7</p>
+							</div>
+						</div>
+						<div class="features__card card">
+							<div class="card__icon" style="background: url(../images/features_3.svg) no-repeat 50%, radial-gradient(100% 100% at 100% 100%, #69D62C 0%, #89E754 100%);"></div>
+							<div class="card__text"> 
+								<h3 class="card__heading">На картку</h3>
+								<p class="card__description">Зарахуємо гроші на будь-яку банківську картку</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews">
+			<div class="reviews__contanier"> 
+				<h2 class="reviews__heading">Відгуки</h2>
+				<div class="reviews__swiper swiper">
+					<div class="reviews__wrapper swiper-wrapper">
+						<div class="reviews__item reviewcard swiper-slide">
+							<h3 class="reviewcard__name">Мар’яна, 21</h3>
+							<p class="reviewcard__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus scelerisque pretium at ut accumsan fringilla. Mattis turpis fringilla aliquam rutrum bibendum hac nec pellentesque.</p>
+						</div>
+						<div class="reviews__item reviewcard swiper-slide"> 
+							<h3 class="reviewcard__name">Олександр, 33</h3>
+							<p class="reviewcard__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus scelerisque pretium at ut accumsan fringilla. Mattis turpis fringilla aliquam rutrum bibendum hac.</p>
+						</div>
+						<div class="reviews__item reviewcard swiper-slide"> 
+							<h3 class="reviewcard__name">Андрій, 26</h3>
+							<p class="reviewcard__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus scelerisque pretium at ut accumsan fringilla. Mattis turpis fringilla aliquam rutrum bibendum hac nec pellentesque.</p>
+						</div>
+						<div class="reviews__item reviewcard swiper-slide"> 
+							<h3 class="reviewcard__name">Олександр, 33</h3>
+							<p class="reviewcard__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus scelerisque pretium at ut accumsan fringilla. Mattis turpis fringilla aliquam rutrum bibendum hac.</p>
+						</div>
+						<div class="reviews__item reviewcard swiper-slide"> 
+							<h3 class="reviewcard__name">Андрій, 26</h3>
+							<p class="reviewcard__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus scelerisque pretium at ut accumsan fringilla. Mattis turpis fringilla aliquam rutrum bibendum hac nec pellentesque.</p>
+						</div>
+					</div>
+				</div>
+				<div class="reviews__control"> 
+					<div class="reviews__pagination swiper-pagination"></div>
+					<div class="reviews__button reviews__button_prev swiper-button-prev"></div>
+					<div class="reviews__button reviews__button_next swiper-button-next"></div>
+				</div>
+			</div>
+		</section>
+		<script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script defer src="scripts/main.min.js"> </script>
+	</body>
+</html>
