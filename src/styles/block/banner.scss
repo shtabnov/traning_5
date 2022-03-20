@@ -1,0 +1,122 @@
+.banner {
+    margin-bottom: 100px;
+
+    &__contanier {
+        max-width: 970px;
+        margin: 0 auto;
+    }
+
+    &__wrapper {
+        display: flex;
+        padding-top: 70px;
+        padding-left: 50px;
+        padding-bottom: 70px;
+        background: url('../images/banner_bg.png') no-repeat;
+        background-size: cover;
+    }
+    &__txt-block {
+        flex: 1 1 50%;
+    }
+    &__heading {
+        margin-bottom: 48px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 150%;
+        color: $white;
+    }
+
+    &__link {
+        padding: 18px 24px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: $white;
+        background-color: $dark;
+        border-radius: 10px;
+
+        &::before {
+            content: url('../images/google_play.svg');
+            margin-right: 16px;
+            vertical-align: top;
+        }
+    }
+
+    &__img-block {
+        flex: 1 1 50%;
+        position: relative;
+
+        & img {
+            position: absolute;
+            left: 50%;
+            bottom: -70px;
+            transform: translate(-50%);
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .banner {
+        margin-bottom: 100px;
+    
+        &__contanier {
+            max-width: 970px;
+            margin: 0 20px;
+        }
+    
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 20px;
+            background: url('../images/banner_mobile.png') no-repeat 50%;
+            // background-size: cover;
+        }
+        &__txt-block {
+            margin: 0 auto;
+            max-width: 280px;
+            flex: 1 1 50%;
+        }
+        &__heading {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 150%;
+            color: $white;
+        }
+    
+        &__link {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 18px 0px 10px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            color: $white;
+            background-color: $dark;
+            border-radius: 10px;
+    
+            &::before {
+                content: url('../images/google_play.svg');
+                margin-right: 16px;
+                vertical-align: top;
+            }
+        }
+    
+        &__img-block {
+            flex: 1 1 50%;
+            
+            & img {
+                display: block;
+                position: static;
+                transform: none;
+                visibility: hidden;
+            }
+        }
+    }
+}
+

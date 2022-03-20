@@ -1,4 +1,5 @@
 .reviews {
+    margin-bottom: 262px;
 
     &__contanier {
         max-width: 1000px;
@@ -94,8 +95,35 @@
 
 }
 
+@media screen and (max-width: 1190px) {
+    .reviews {
+        
+        margin-bottom: 100px;
+    }
+    .swiper-button-next {
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            content: url('../images/arrow_next.svg');
+        }
+    }
+    .swiper-button-prev {
+    
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            content: url('../images/arrow_prev.svg');
+        }
+    }
+}
+
 @media screen and (max-width: 560px) {
     .reviews {
+        
+        margin-bottom: 100px;
 
         &__contanier {
             margin: 0 5px;
@@ -149,7 +177,7 @@
     }
     
     .reviewcard {
-        min-height: 250px;
+        min-height: 290px;
         padding: 30px 30px;
     }
 }
