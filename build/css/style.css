@@ -464,6 +464,25 @@ a {
   text-overflow: ellipsis;
 }
 
+@media screen and (max-width: 1190px) {
+  .reviews {
+    margin-bottom: 100px;
+  }
+
+  .swiper-button-next::after {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    content: url("../images/arrow_next.svg");
+  }
+
+  .swiper-button-prev::after {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    content: url("../images/arrow_prev.svg");
+  }
+}
 @media screen and (max-width: 560px) {
   .reviews {
     margin-bottom: 100px;
@@ -512,7 +531,7 @@ a {
   }
 
   .reviewcard {
-    min-height: 250px;
+    min-height: 290px;
     padding: 30px 30px;
   }
 }
@@ -580,14 +599,16 @@ a {
     display: flex;
     flex-direction: column;
     padding: 40px 20px;
-    background: url("../images/banner_mobile.png") no-repeat;
-    background-size: cover;
+    background: url("../images/banner_mobile.png") no-repeat 50%;
   }
   .banner__txt-block {
+    margin: 0 auto;
+    max-width: 280px;
     flex: 1 1 50%;
   }
   .banner__heading {
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -619,5 +640,6 @@ a {
     display: block;
     position: static;
     transform: none;
+    visibility: hidden;
   }
 }
