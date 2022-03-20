@@ -13,6 +13,5 @@ for (let linkItem of links) {
         event.preventDefault();
         let target = event.target.getAttribute('href').substr(1);
         scrollTo(document.querySelector('.'+ target));
-        
     })
 }
