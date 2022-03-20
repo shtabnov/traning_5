@@ -59,6 +59,21 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .features {
+
+        &__contanier {
+            margin: 0 auto;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    
+        &__wrapper {
+            margin-bottom: 70px;
+        }
+    }
+}
+
 @media screen and (max-width: 560px) {
     .features {
 

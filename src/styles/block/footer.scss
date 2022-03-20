@@ -15,6 +15,19 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .footer {
+        margin-bottom: 50px;
+    
+        &__contanier {
+            max-width: 977px;
+            margin: 0 auto;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+
 @media screen and (max-width: 560px) {
     .footer {
         margin-bottom: 50px;

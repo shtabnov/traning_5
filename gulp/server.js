@@ -5,10 +5,10 @@ const reload = browserSync.reload;
 module.exports = function server () {
     browserSync.init({
         server: {
-            baseDir: "./build"
+            baseDir: "build"
         }
     });
 
-    gulp.watch("./build/*.html").on("change", reload);
-    gulp.watch("./build/css/*.css").on("change", reload);
+    gulp.watch("build/*.html").on("change", reload);
+    gulp.watch("build/css/*.css").on("change", reload);
 };
